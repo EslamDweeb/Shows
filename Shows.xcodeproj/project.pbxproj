@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C338F64E2777E86A00E8B0B0 /* IndecatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F64D2777E86A00E8B0B0 /* IndecatorView.swift */; };
 		C359B534277690D8002DDE6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B533277690D8002DDE6D /* AppDelegate.swift */; };
 		C359B538277690D8002DDE6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B537277690D8002DDE6D /* ViewController.swift */; };
 		C359B53D277690E0002DDE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C359B53C277690E0002DDE6D /* Assets.xcassets */; };
@@ -17,9 +18,15 @@
 		C359B553277692DB002DDE6D /* UIViewController_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B54F277692DB002DDE6D /* UIViewController_Ext.swift */; };
 		C359B557277693C1002DDE6D /* ShowsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B556277693C1002DDE6D /* ShowsData.swift */; };
 		C359B55B27769590002DDE6D /* VerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B55A27769590002DDE6D /* VerticalStack.swift */; };
+		C359B55F27769700002DDE6D /* UIImageView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B55E27769700002DDE6D /* UIImageView_Ext.swift */; };
+		C359B5632776A26F002DDE6D /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B5622776A26F002DDE6D /* NetworkConfig.swift */; };
+		C359B5662777E30C002DDE6D /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B5652777E30C002DDE6D /* ServiceProvider.swift */; };
+		C359B5692777E55D002DDE6D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B5682777E55D002DDE6D /* RatingView.swift */; };
+		C359B56E2777E698002DDE6D /* ShowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359B56D2777E698002DDE6D /* ShowService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C338F64D2777E86A00E8B0B0 /* IndecatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndecatorView.swift; sourceTree = "<group>"; };
 		C359B530277690D8002DDE6D /* Shows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C359B533277690D8002DDE6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C359B537277690D8002DDE6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +39,11 @@
 		C359B54F277692DB002DDE6D /* UIViewController_Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_Ext.swift; sourceTree = "<group>"; };
 		C359B556277693C1002DDE6D /* ShowsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsData.swift; sourceTree = "<group>"; };
 		C359B55A27769590002DDE6D /* VerticalStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStack.swift; sourceTree = "<group>"; };
+		C359B55E27769700002DDE6D /* UIImageView_Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView_Ext.swift; sourceTree = "<group>"; };
+		C359B5622776A26F002DDE6D /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		C359B5652777E30C002DDE6D /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		C359B5682777E55D002DDE6D /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		C359B56D2777E698002DDE6D /* ShowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 		C359B532277690D8002DDE6D /* Shows */ = {
 			isa = PBXGroup;
 			children = (
+				C359B55D277695F6002DDE6D /* Network */,
 				C359B55927769577002DDE6D /* CustomView */,
 				C359B555277693AF002DDE6D /* Model */,
 				C359B54B277692B8002DDE6D /* Extentions */,
@@ -79,6 +92,7 @@
 		C359B54B277692B8002DDE6D /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				C359B55E27769700002DDE6D /* UIImageView_Ext.swift */,
 				C359B54E277692DB002DDE6D /* UIlable_Ext.swift */,
 				C359B54D277692DB002DDE6D /* UIStackView_Ext.swift */,
 				C359B54C277692DB002DDE6D /* UIView_Ext.swift */,
@@ -98,9 +112,37 @@
 		C359B55927769577002DDE6D /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				C338F64D2777E86A00E8B0B0 /* IndecatorView.swift */,
+				C359B5682777E55D002DDE6D /* RatingView.swift */,
 				C359B55A27769590002DDE6D /* VerticalStack.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C359B55D277695F6002DDE6D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C359B56C2777E642002DDE6D /* Services */,
+				C359B56B2777E632002DDE6D /* config */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C359B56B2777E632002DDE6D /* config */ = {
+			isa = PBXGroup;
+			children = (
+				C359B5622776A26F002DDE6D /* NetworkConfig.swift */,
+				C359B5652777E30C002DDE6D /* ServiceProvider.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		C359B56C2777E642002DDE6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C359B56D2777E698002DDE6D /* ShowService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,13 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C359B56E2777E698002DDE6D /* ShowService.swift in Sources */,
 				C359B557277693C1002DDE6D /* ShowsData.swift in Sources */,
 				C359B550277692DB002DDE6D /* UIView_Ext.swift in Sources */,
 				C359B538277690D8002DDE6D /* ViewController.swift in Sources */,
+				C338F64E2777E86A00E8B0B0 /* IndecatorView.swift in Sources */,
+				C359B5692777E55D002DDE6D /* RatingView.swift in Sources */,
 				C359B553277692DB002DDE6D /* UIViewController_Ext.swift in Sources */,
 				C359B552277692DB002DDE6D /* UIlable_Ext.swift in Sources */,
 				C359B534277690D8002DDE6D /* AppDelegate.swift in Sources */,
+				C359B5632776A26F002DDE6D /* NetworkConfig.swift in Sources */,
 				C359B55B27769590002DDE6D /* VerticalStack.swift in Sources */,
+				C359B55F27769700002DDE6D /* UIImageView_Ext.swift in Sources */,
+				C359B5662777E30C002DDE6D /* ServiceProvider.swift in Sources */,
 				C359B551277692DB002DDE6D /* UIStackView_Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
