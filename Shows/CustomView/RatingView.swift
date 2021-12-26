@@ -18,7 +18,10 @@ class RatingView:UIView{
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
-    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUI()
